@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            margin-top: 10px;
+          
+        }
+        
+        
+        .heading{
+            /* border: 2px solid red; */
+            text-align: center;
+            padding-bottom  : 10px;
+            
+        }
+        
+        input{
+            text-align: center;
+            padding: 10px 15px;
+            
+        }
+        button{
+            margin-top: 10px;
+            border: 2px solid rgb(126, 121, 121);
+            border-radius: 7px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>Todo Application</h1>
+        <input id="input" type="text" name="" placeholder="Enter Todo Here !" id="">
+        <br />
+
+        <button onclick="addTodo(this)">Add Todo</button>
+        <button onclick="deleteall()">Delete Todo</button>
+        <br />
+        Count : <small id="count"></small>
+    </div>
+
+
+    <div>
+        <ul id="list">
+            
+        </ul>
+    </div>
+
+</body>
+<script src="./app.js"></script>
+</html>
